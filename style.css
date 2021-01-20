@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+form{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(149deg, rgba(26,128,195,1) 73%, rgba(35,58,124,1) 93%);
+    color: white;
+    
+}
+.form-container{
+    height: 100%;
+    width: 100%;
+}
+
+input,
+select{
+    width: 100%;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 60px;
+    font-size: 18px;
+    color: #353535;
+    border: none !important;
+    font-weight: 700;
+    padding:0 20px;
+    word-break: break-all;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+.form-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+.form-group{
+    padding: 8px 0;
+}
+
+.form-group-privacy{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin: 30px 0;
+}
+
+.form-top .form-group{
+    width: 49%;
+    padding-bottom: 8px;
+}
+
+.privacy-check{
+    width: 25px;
+    border-radius: 30px;
+    border: 1px solid black;
+    margin-right: 3%;
+    font-size: 12px;
+}
+
+button{
+    width: 30%;
+    height: 65px;
+    background-color: #E6007E;
+    border: 5px solid white;
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+::placeholder,
+option{ 
+    font-size: 18px !important;
+    color: #bbbaba;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif !important;
+  }
+
+  .styled-select select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+option span{
+    color: red;
+}
+@media (max-width: 768px) { 
+    input,
+    select{
+    height: 30px;
+    }
+    .privacy-check{
+        width: 90px;
+    }
+    .form-group-privacy label{
+       font-size: 10px;
+    }
+    .form-group-privacy {
+        margin: 2em 0;
+
+    }
+ }
+
+@media (max-width: 576px) {
+    .form-top{
+       flex-direction: column;
+    }
+    .form-top .form-group:first-child{
+        padding-bottom: 15px;
+    }
+
+    .form-top .form-group{
+        width: 100%;
+        height: 50;
+        padding: 0 0 8px 0;
+
+    }
+    input,
+    select{
+    height: 30px;
+    }
+    .privacy-check{
+        width: 90px;
+        height: 17px;
+    }
+    .form-group-privacy label{
+       font-size: 9px;
+    }
+    .form-group-privacy {
+        margin: 1em 0;
+
+    }
+    button{
+        margin-left: 15%;
+        width: 70%;
+        font-size: 14px;
+        height: 30px;
+        border: 3px solid white;
+        margin-top: 0.5em;
+    }
+    input, 
+    select,
+    ::placeholder,
+    option {
+        font-size: 13px !important;
+    }
+    
+  }
